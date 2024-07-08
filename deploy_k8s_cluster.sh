@@ -5,10 +5,11 @@ command_exists() {
     command -v "$1" &> /dev/null
 }
 
-# Check if VirtualBox is installed
+# Install VirtualBox if not installed
 if ! command_exists virtualbox; then
-    echo "VirtualBox is not installed. Please install VirtualBox and try again."
-    exit 1
+    echo "VirtualBox is not installed. Installing VirtualBox..."
+    sudo apt-get update
+    sudo apt-get install -y virtualbox
 else
     echo "VirtualBox is already installed."
 fi
