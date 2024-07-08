@@ -11,3 +11,6 @@
 3. Starts the Vagrant environment.
 
 4. Retrieves the join command from the master node and uses it to join the worker node to the cluster.
+
+
+You can run this script with ' ./deploy_k8s_cluster.sh '
