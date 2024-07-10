@@ -13,4 +13,22 @@
 4. Retrieves the join command from the master node and uses it to join the worker node to the cluster.
 
 
-You can run this script with ' ./deploy_k8s_cluster.sh '
+You can run this script with ` ./deploy_k8s_cluster.sh `
+
+
+
+# Instructions for Python
+
+Save the script as ` deploy_k8s_cluster.py.`
+
+Make the script executable (optional):
+
+chmod +x deploy_k8s_cluster.py
+
+## Run the script:
+
+Copy code
+
+` python3 deploy_k8s_cluster.py `
+
+This Python script performs the same steps as the previous Bash script, ensuring that the necessary packages are installed, creating the Vagrantfile, and managing the Vagrant environment to deploy the Kubernetes cluster.
