@@ -16,7 +16,7 @@ fi
 
 # Check if Vagrant is installed
 if ! command_exists vagrant; then
-    echo "Vagrant is not installed. Please install Vagrant and try again."
+    echo "Vagrant is not installed. Please install Vagrant."
     exit 1
 else
     echo "Vagrant is already installed."
